@@ -1,5 +1,5 @@
-# Plataforma ReUse! — FIAP <br>
-Desenvolvido por: Evelin Julia Hashimoto e Rebecca Dias Martins
+# Plataforma ReUse! <br>
+Desenvolvido por: Evelin Julia Hashimoto e Rebecca Dias Martins - FIAP 2025 2TWDOR
 
 App mobile criado com **Expo + React Native** com o objetivo de facilitar a troca de objetos pessoais entre usuários, promovendo o reuso e a sustentabilidade.  
 
