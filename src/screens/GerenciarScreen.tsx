@@ -4,16 +4,16 @@ import { ScreenScaffold, baseStyles } from '../components/Scaffold';
 import { PrimaryButton, OutlineButton } from '../components/Buttons';
 
 const MOCK = [
-  { id: '1', title: 'Cafeteira', status: 'Ativo' },
-  { id: '2', title: 'Livro UX', status: 'Pausado' },
-  { id: '3', title: 'Camiseta M', status: 'Ativo' },
+  { id: '1', title: 'Mochila Nike', status: 'Ativo' },
+  { id: '2', title: 'Livro Drácula, Bram Stocker Edição 2024', status: 'Excluído' },
+  { id: '3', title: 'Capa para Iphone 13 Mini', status: 'Ativo' },
 ];
 
 export default function GerenciarScreen() {
   return (
     <ScreenScaffold
       title="Meus itens"
-      subtitle="Edite, pause ou remova seus anúncios."
+      subtitle="Edite ou remova seus anúncios"
     >
       {MOCK.map((it) => (
         <View
@@ -38,7 +38,7 @@ export default function GerenciarScreen() {
             <OutlineButton label="Editar" onPress={() => {}} />
             <View style={{ width: 8 }} />
             <PrimaryButton
-              label={it.status === 'Ativo' ? 'Pausar' : 'Ativar'}
+              label={it.status === 'Ativo' ? 'Excluir' : 'Ativar'}
               onPress={() => {}}
             />
           </View>

@@ -47,7 +47,7 @@ export function OutlineButton({
 
 const styles = StyleSheet.create({
   primary: {
-    backgroundColor: '#1F6FEB',
+    backgroundColor: '#9D9C9C',
     paddingVertical: 14,
     paddingHorizontal: 16,
     borderRadius: 12,
@@ -56,12 +56,12 @@ const styles = StyleSheet.create({
   primaryText: { color: '#fff', fontWeight: '700' },
   outline: {
     borderWidth: 1.6,
-    borderColor: '#1F6FEB',
+    borderColor: '#9D9C9C',
     paddingVertical: 14,
     paddingHorizontal: 16,
     borderRadius: 12,
     alignItems: 'center',
   },
-  outlineText: { color: '#1F6FEB', fontWeight: '700' },
+  outlineText: { color: '#9D9C9C', fontWeight: '700' },
   pressed: { opacity: 0.9 },
 });
