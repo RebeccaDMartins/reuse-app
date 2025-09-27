@@ -1,7 +1,8 @@
-# Plataforma ReUse — FIAP (Expo + React Native)<br>
+# Plataforma ReUse! — FIAP <br>
 Desenvolvido por: Evelin Julia Hashimoto e Rebecca Dias Martins
 
-App mobile criado com **Expo + React Native** a partir dos **wireframes de baixa fidelidade**.  
+App mobile criado com **Expo + React Native** com o objetivo de facilitar a troca de objetos pessoais entre usuários, promovendo o reuso e a sustentabilidade.  
+
 
 ## 🎯 Escopo desta entrega
 - Telas implementadas fielmente aos wireframes (com pequenos aprimoramentos de UX):
