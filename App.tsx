@@ -15,6 +15,9 @@ import LoginScreen from "./src/screens/LoginScreen";
 import { AuthContext, AUTH_USER_KEY, type AuthUser } from "./src/lib/auth";
 import { save, load, remove } from "./src/lib/storage";
 
+import ProductsScreen from "./src/screens/ProductsScreen";
+
+
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
@@ -34,6 +37,7 @@ function AuthStackScreens() {
     <Stack.Navigator>
       <Stack.Screen name="Login" component={LoginScreen} options={{ title: "ReUse!" }} />
       <Stack.Screen name="Cadastro" component={CadastroScreen} options={{ title: "Cadastro" }} />
+      <Stack.Screen name="Products" component={ProductsScreen} />
     </Stack.Navigator>
   );
 }
