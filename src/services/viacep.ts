@@ -10,6 +10,8 @@ export type ViaCepAddress = {
     mensagem?: string;
 };
 
+import { cacheGet, cacheSet } from "../lib/cache";
+
 export async function getAddressByCep(cepInput: string): Promise<ViaCepAddress> {
     const cleanCep = String(cepInput || "").replace(/\D/g, "");
 

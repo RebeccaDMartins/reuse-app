@@ -1,6 +1,7 @@
 // src/services/ibge.ts
 export type Estado = { id: number; sigla: string; nome: string };
 export type Municipio = { id: number; nome: string };
+import { cacheGet, cacheSet } from "../lib/cache";
 
 export async function getEstados(): Promise<Estado[]> {
     try {
