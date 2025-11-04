@@ -18,7 +18,6 @@ export default function CadastroScreen() {
     }
     const handle = "@" + name.trim().toLowerCase().replace(/\s+/g, ".");
     await login({ name: name.trim(), handle, email: email.trim().toLowerCase() });
-    // App troca automaticamente para as Tabs
   };
 
   return (

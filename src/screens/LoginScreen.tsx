@@ -15,11 +15,9 @@ export default function LoginScreen({ navigation }: any) {
             alert("Informe um e-mail.");
             return;
         }
-        // simulamos usuário autenticado
         const name = "Ana Maria";
         const handle = "@" + email.split("@")[0];
         await login({ name, handle, email });
-        // App troca automaticamente para as Tabs
     };
 
     return (

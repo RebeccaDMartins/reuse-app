@@ -15,7 +15,6 @@ export default function PublicarScreen() {
   const [images, setImages] = useState<string[]>([]);
 
   useEffect(() => {
-    // carrega rascunho salvo
     (async () => {
       const draft = await load<Draft>(DRAFT_KEY);
       if (draft) {
@@ -94,7 +93,7 @@ export default function PublicarScreen() {
         </View>
       </View>
 
-      {/* Formulário simples (sem libs) */}
+      {}
       <View style={baseStyles.card}>
         <Label>Título</Label>
         <TextInput value={title} onChangeText={setTitle} placeholder="Ex.: Livro de design" style={styles.input} />

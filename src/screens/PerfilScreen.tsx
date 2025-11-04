@@ -1,5 +1,4 @@
-﻿// src/screens/PerfilScreen.tsx
-import React, { useEffect, useRef, useState } from "react";
+﻿import React, { useEffect, useRef, useState } from "react";
 import { View, Text, StyleSheet, TextInput, Alert, ActivityIndicator } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { ScreenScaffold, baseStyles } from "../components/Scaffold";
@@ -45,7 +44,6 @@ export default function PerfilScreen() {
 
   useEffect(() => {
     (async () => {
-      // carrega perfil salvo
       const perfil = await load<{
         name: string;
         handle: string;
@@ -70,12 +68,10 @@ export default function PerfilScreen() {
         setUf(perfil.uf ?? "");
       }
 
-      // carrega estados
       const estadosData = await getEstados();
       setEstados(estadosData);
       setLoadingIbge(false);
 
-      // se já tiver UF salva, carrega municípios
       if (perfil?.uf) {
         const mun = await getMunicipios(perfil.uf);
         setMunicipios(mun);
@@ -108,10 +104,8 @@ export default function PerfilScreen() {
       setLocalidade(data.localidade);
       setUf(data.uf);
 
-      // atualiza municípios da UF vinda do CEP
       buscarMunicipiosPorUf(data.uf);
 
-      // foca no número após preencher
       setTimeout(() => numeroRef.current?.focus(), 80);
     } finally {
       setLoadingCep(false);

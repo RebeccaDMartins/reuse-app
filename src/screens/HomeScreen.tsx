@@ -51,7 +51,7 @@ export default function HomeScreen({ navigation }: any) {
 
 
 
-        {/* CATEGORIAS — agora a ÚLTIMA seção da página */}
+        {}
         <Text style={styles.h2} accessibilityRole="header">Categorias</Text>
         <View style={styles.grid}>
           {categories.map((t) => (
